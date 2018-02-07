@@ -48,8 +48,133 @@ var data = [
     ['pa', 7.08],
     ['tt', 7.04],
     ['bg', 7.03],
-    
-];
+
+    ['ar', 6.96],
+    ['br', 6.86],
+    ['sr', 6.76],
+    ['ph', 6.71],
+    ['gh', 6.69],
+    ['pl', 6.67],
+    ['co', 6.67],
+    ['do', 6.66],
+    ['ls', 6.64],
+    ['hu', 6.64],
+    ['hr', 6.63],
+    ['my', 6.54],
+    ['mn', 6.50],
+    ['pe', 6.49],
+    ['lk', 6.48],
+    ['gy', 6.46],
+    ['ro', 6.44],
+    ['sv', 6.43],
+    ['rs', 6.41],
+    ['mx', 6.41],
+    ['id', 6.39],
+    ['tn', 6.32],
+    ['sg', 6.32],
+    ['hk', 6.31],
+    ['na', 6.31],
+    ['py', 6.31],
+    ['sn', 6.15],
+    ['pg', 6.03],
+    ['ec', 6.02],
+
+    ['al', 5.98],
+    ['md', 5.94],
+    ['ge', 5.93],
+    ['gt', 5.86],
+    ['fj', 5.85],
+    ['hn', 5.72],
+    ['ua', 5.69],
+    ['me', 5.69],
+    ['zm', 5.68],
+    ['ml', 5.64],
+    ['bj', 5.61],
+    ['mk', 5.57],
+    ['bo', 5.49],
+    ['mw', 5.49],
+    ['tz', 5.47],
+    ['bd', 5.43],
+    ['lr', 5.23],
+    ['np', 5.18],
+    ['ke', 5.11],
+    ['kg', 5.11],
+    ['mg', 5.11],
+    ['ug', 5.09],
+    ['bt', 5.08],
+
+    ['tr', 4.88],
+    ['ma', 4.87],
+    ['ba', 4.87],
+    ['bf', 4.75],
+    ['lb', 4.72],
+    ['sl', 4.66],
+    ['ni', 4.66],
+    ['th', 4.63],
+    ['we', 4.46],
+    ['ng', 4.44],
+    ['pk', 4.26],
+    ['am', 4.11],
+    ['ir', 4.09],
+    ['gm', 4.06],
+    ['ht', 4.03],
+    ['mz', 4.02],
+
+    ['ci', 3.93],
+    ['jo', 3.87],
+    ['ve', 3.87],
+    ['kw', 3.85],
+    ['mm', 3.83],
+    ['mr', 3.82],
+    ['ne', 3.76],
+    ['km', 3.71],
+    ['kh', 3.63],
+    ['ao', 3.62],
+    ['ga', 3.61],
+    ['cm', 3.61],
+    ['dz', 3.56],
+    ['et', 3.42],
+    ['eg', 3.36],
+    ['cu', 3.31],
+    ['cg', 3.25],
+    ['qa', 3.19],
+    ['rw', 3.19],
+    ['ru', 3.17],
+    ['zw', 3.16],
+    ['gn', 3.14],
+    ['by', 3.13],
+    ['cn', 3.10],
+    ['vn', 3.08],
+    ['kz', 3.06],
+    ['tg', 3.05],
+    ['om', 3.04],
+    ['sz', 3.03],
+
+    ['dj', 2.76],
+    ['bh', 2.71],
+    ['ae', 2.69],
+    ['az', 2.65],
+    ['af', 2.55],
+    ['ir', 2.45],
+    ['er', 2.37],
+    ['la', 2.37],
+    ['bi', 2.33],
+    ['ly', 2.32],
+    ['sd', 2.15],
+    ['ye', 2.07],
+
+    ['gw', 1.98],
+    ['uz', 1.95],
+    ['sa', 1.93],
+    ['tj', 1.93],
+    ['gq', 1.81],
+    ['tm', 1.72],
+    ['cd', 1.61],
+    ['cf', 1.52],
+    ['td', 1.50],
+    ['sy', 1.43],
+    ['kp', 1.08],
+    ];
 
 Highcharts.mapChart("container", {
     title: {
@@ -62,13 +187,17 @@ Highcharts.mapChart("container", {
 
     colorAxis: {
         min: 0,
-        stops: [
-            [0, '#EFEFFF'],
-            [0.5, Highcharts.getOptions().colors[0]],
-            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).brighten(-0.5).get()]
+        stops: [ 
+            [0, '#8B0000'],
+            [0.5, '#FFFACD'],
+            [0.9, '#006400']
         ]
     },
-
+    credits: {
+        text: "Zdroj dat: The Economist Intelligence Unit",
+        mapText: "",
+        href: "https://www.eiu.com/topic/democracy-index"
+    },
     legend: {
         layout: 'vertical',
         align: 'left',
@@ -198,25 +327,283 @@ Highcharts.mapChart("container", {
                 case "Brazil":
                     countryname = "Brazílie";
                     break;
+                case "Suriname":
+                    countryname = "Surinam";
+                    break;
+                case "Philippines":
+                    countryname = "Filipíny";
+                    break;
+                case "Poland":
+                    countryname = "Polsko";
+                    break;
+                case "Colombia":
+                    countryname = "Kolumbie";
+                    break;
+                case "Dominican Republic":
+                    countryname = "Dominikánská republika";
+                    break;
+                case "Hungary":
+                    countryname = "Maďarsko";
+                    break;
+                case "Croatia":
+                    countryname = "Chorvatsko";
+                    break;
+                case "Malaysia":
+                    countryname = "Malajsie";
+                    break;
+                case "Mongolia":
+                    countryname = "Mongolsko";
+                    break;
+                case "Romania":
+                    countryname = "Rumunsko";
+                    break;
+                case "El Salvador":
+                    countryname = "Salvador";
+                    break;
+                case "Republic of Serbia":
+                    countryname = "Srbsko";
+                    break;
+                case "Mexico":
+                    countryname = "Mexiko";
+                    break;
+                case "Indonesia":
+                    countryname = "Indonésie";
+                    break;
+                case "Tunisia":
+                    countryname = "Tunisko";
+                    break;
+                case "Singapore":
+                    countryname = "Singapur";
+                    break;
+                case "Namibia":
+                    countryname = "Namibie";
+                    break;
+                case "Papua New Guinea":
+                    countryname = "Papua-Nová Guinea";
+                    break;
+                case "Ecuador":
+                    countryname = "Ekvádor";
+                    break;
+                case "Albania":
+                    countryname = "Albánie";
+                    break;
+                case "Moldova":
+                    countryname = "Moldavsko";
+                    break;
+                case "Georgia":
+                    countryname = "Gruzie";
+                    break;
+                case "Fiji":
+                    countryname = "Fidži";
+                    break;
+                case "Ukraine":
+                    countryname = "Ukrajina";
+                    break;
+                case "Montenegro":
+                    countryname = "Černá Hora";
+                    break;
+                case "Zambia":
+                    countryname = "Zambie";
+                    break;
+                case "Macedonia":
+                    countryname = "Makedonie";
+                    break;
+                case "Bolivia":
+                    countryname = "Bolívie";
+                    break;
+                case "United Republic of Tanzania":
+                    countryname = "Tanzanie";
+                    break;
+                case "Bangladesh":
+                    countryname = "Bangladéš";
+                    break;
+                case "Liberia":
+                    countryname = "Libérie";
+                    break;
+                case "Nepal":
+                    countryname = "Nepál";
+                    break;
+                case "Kenya":
+                    countryname = "Keňa";
+                    break;
+                case "Kyrgyzstan":
+                    countryname = "Kyrgyzstán";
+                    break;
+                case "Madagascar":
+                    countryname = "Madagaskar";
+                    break;
+                case "Bhutan":
+                    countryname = "Bhútán";
+                    break;
+                case "Turkey":
+                    countryname = "Turecko";
+                    break;
+                case "Morocco":
+                    countryname = "Maroko";
+                    break;
+                case "Bosnia and Herzegovina":
+                    countryname = "Bosna a Hercegovina";
+                    break;
+                case "Lebanon":
+                    countryname = "Libanon";
+                    break;
+                case "Nicaragua":
+                    countryname = "Nikaragua";
+                    break;
+                case "Thailand":
+                    countryname = "Thajsko";
+                    break;
+                case "West Bank":
+                    countryname = "Palestina";
+                    break;
+                case "Nigeria":
+                    countryname = "Nigérie";
+                    break;
+                case "Pakistan":
+                    countryname = "Pákistán";
+                    break;
+                case "Armenia":
+                    countryname = "Arménie";
+                    break;
+                case "Iraq":
+                    countryname = "Irák";
+                    break;
+                case "Gambia":
+                    countryname = "Gambie";
+                    break;
+                case "Mozambique":
+                    countryname = "Mosambik";
+                    break;
+                case "Ivory Coast":
+                    countryname = "Pobřeží slonoviny";
+                    break;
+                case "Jordan":
+                    countryname = "Jordánsko";
+                    break;
+                case "Kuwait":
+                    countryname = "Kuvajt";
+                    break;
+                case "Mauritania":
+                    countryname = "Mauritánie";
+                    break;
+                case "Comoros":
+                    countryname = "Komory";
+                    break;
+                case "Cambodia":
+                    countryname = "Kambodža";
+                    break;
+                case "Cameroon":
+                    countryname = "Kamerun";
+                    break;
+                case "Algeria":
+                    countryname = "Alžírsko";
+                    break;
+                case "Ethiopia":
+                    countryname = "Etiopie";
+                    break;
+                case "Cuba":
+                    countryname = "Kuba";
+                    break;
+                case "Republic of Congo":
+                    countryname = "Kongo";
+                    break;
+                case "Qatar":
+                    countryname = "Katar";
+                    break;
+                case "Russia":
+                    countryname = "Rusko";
+                    break;
+                case "Belarus":
+                    countryname = "Bělorusko";
+                    break;
+                case "China":
+                    countryname = "Čína";
+                    break;
+                case "Kazakhstan":
+                    countryname = "Kazachstán";
+                    break;
+                case "Oman":
+                    countryname = "Omán";
+                    break;
+                case "Swaziland":
+                    countryname = "Svazijsko";
+                    break;
+                case "Djibouti":
+                    countryname = "Džibuti";
+                    break;
+                case "Bahrain":
+                    countryname = "Bahrajn";
+                    break;
+                case "United Arab Emirates":
+                    countryname = "Spojené arabské emiráty";
+                    break;
+                case "Azerbaijan":
+                    countryname = "Azerbajdžán";
+                    break;
+                case "Afghanistan":
+                    countryname = "Afghánistán";
+                    break;
+                case "Iran":
+                    countryname = "Irán";
+                    break;
+                case "Libya":
+                    countryname = "Libye";
+                    break;
+                case "Sudan":
+                    countryname = "Súdán";
+                    break;
+                case "Yemen":
+                    countryname = "Jemen";
+                    break;
+                case "Uzbekistan":
+                    countryname = "Uzbekistán";
+                    break;
+                case "Saudi Arabia":
+                    countryname = "Saúdská Arábie";
+                    break;
+                case "Tajikistan":
+                    countryname = "Tádžikistán";
+                    break;
+                case "Equatorial Guinea":
+                    countryname = "Rovníková Guinea";
+                    break;
+                case "Turkmenistan":
+                    countryname = "Turkmenistán";
+                    break;
+                case "Democratic Republic of the Congo":
+                    countryname = "Demokratická republika Kongo";
+                    break;
+                case "Central African Republic":
+                    countryname = "Středoafrická republika";
+                    break;
+                case "Chad":
+                    countryname = "Čad";
+                    break;
+                case "Syria":
+                    countryname = "Sýrie";
+                    break;
+                case "North Korea":
+                    countryname = "Severní Korea";
+                    break;
                 default:
                     countryname = this.point.name;
             }
             return '<b>' + this.series.name + '</b><br>' +
                                 'Země: ' + countryname + '<br>' +
-                                'Index: ' + this.point.value;
+                                'Index: ' + this.point.value.toString().replace(".",",");
         }
     },
     series: [{
         data: data,
-        mapData: Highcharts.maps["custom/world"],
-        name: 'Democracy Index',
+        mapData: Highcharts.maps["custom/world-palestine"],
+        name: 'Index demokracie',
         dataLabels: {
             enabled: false
         }
     }, {
         type: 'mapline',
         name: "Separators",
-        data: Highcharts.geojson(Highcharts.maps["custom/world"], 'mapline'),
+        data: Highcharts.geojson(Highcharts.maps["custom/world-palestine"], 'mapline'),
         nullColor: 'gray',
         showInLegend: false,
         enableMouseTracking: false
