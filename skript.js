@@ -176,6 +176,34 @@ var data = [
     ['kp', 1.08],
     ];
 
+
+Highcharts.chart('graf', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Index demokracie ve vybraných zemích'
+    },
+    xAxis: {
+        categories: ["Norsko", "Kanada", "Německo", "Velká Británie",
+         "Rakousko", "Španělsko", "USA", "Itálie", "Izrael", "Česko",
+         "Řecko", "Slovensko", "Polsko", "Maďarsko", "Ukrajina", "Turecko",
+         "Venezuela", "Egypt", "Kuba", "Rusko", "Čína", "Irán", "Saúdská Arábie", "Sýrie", "Severní Korea"]
+    },
+    credits: {
+        enabled: false
+    },
+    legend: {
+        enabled: false
+    },
+    series: [{
+        name: 'Index demokracie',
+        data: [9.87, 9.15, 8.61, 8.53, 8.42, 8.08, 7.98, 7.98, 7.79,
+         7.62, 7.29, 7.16, 6.67, 6.64, 5.69, 4.88, 3.87, 3.36, 3.31,
+         3.17, 3.10, 2.45, 1.93, 1.43, 1.08]
+    }]
+});
+
 Highcharts.mapChart("container", {
     title: {
         text: null

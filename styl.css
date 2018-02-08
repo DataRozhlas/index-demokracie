@@ -1,6 +1,9 @@
 #container {
     height: 500px;
 }
+#graf {
+    height: 600px;
+}
 @media (max-width: 768px) {
     #container {
         height: 310px;
