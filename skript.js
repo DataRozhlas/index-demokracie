@@ -221,6 +221,8 @@ Highcharts.chart('line', {
         categories: [2011, 2012, 2013, 2014, 2015, 2016, 2017]
     },
     yAxis: {
+        min: 6,
+        max: 10,    
         title: {
             text: null
         }
