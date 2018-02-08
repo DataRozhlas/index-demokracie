@@ -210,6 +210,33 @@ Highcharts.chart('graf', {
     }]
 });
 
+Highcharts.chart('line', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Index demokracie v ČR v průběhu let'
+    },
+    xAxis: {
+        categories: [2011, 2012, 2013, 2014, 2015, 2016, 2017]
+    },
+    yAxis: {
+        title: {
+            text: null
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    legend: {
+        enabled: false
+    },
+    series: [{
+        name: 'Index demokracie',
+        data: [8.19, 8.19, 8.06, 7.94, 7.94, 7.82, 7.62]
+    }]
+});
+
 Highcharts.mapChart("container", {
     title: {
         text: null
