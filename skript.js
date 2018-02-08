@@ -190,6 +190,9 @@ Highcharts.chart('graf', {
          "Řecko", "Slovensko", "Polsko", "Maďarsko", "Ukrajina", "Turecko",
          "Venezuela", "Egypt", "Kuba", "Rusko", "Čína", "Irán", "Saúdská Arábie", "Sýrie", "Severní Korea"]
     },
+    yAxis: {
+        max: 10
+    },
     credits: {
         enabled: false
     },
