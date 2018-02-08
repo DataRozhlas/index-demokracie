@@ -215,7 +215,7 @@ Highcharts.chart('line', {
         type: 'line'
     },
     title: {
-        text: 'Index demokracie v ČR v průběhu let'
+        text: 'Index demokracie v některých zemích v průběhu let'
     },
     xAxis: {
         categories: [2011, 2012, 2013, 2014, 2015, 2016, 2017]
@@ -230,12 +230,27 @@ Highcharts.chart('line', {
     credits: {
         enabled: false
     },
-    legend: {
-        enabled: false
-    },
     series: [{
-        name: 'Index demokracie',
+        name: 'Česko',
         data: [8.19, 8.19, 8.06, 7.94, 7.94, 7.82, 7.62]
+    }, {
+        name: 'Slovensko',
+        data: [7.35, 7.35, 7.35, 7.35, 7.29, 7.29, 7.16]
+    }, {
+        name: 'Polsko',
+        data: [7.12, 7.12, 7.12, 7.47, 7.09, 6.83, 6.67]
+    }, {
+        name: 'Maďarsko',
+        data: [7.04, 6.96, 6.96, 6.90, 6.84, 6.72, 6.64]
+    }, {
+        name: 'USA',
+        data: [8.11, 8.11, 8.11, 8.11, 8.05, 7.98, 7.98]
+    }, {
+        name: 'Něměcko',
+        data: [8.34, 8.34, 8.31, 8.64, 8.64, 8.63, 8.61]
+    }, {
+        name: 'Švédsko',
+        data: [9.50, 9.73, 9.73, 9.73, 9.45, 9.39, 9.39]
     }]
 });
 
