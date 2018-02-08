@@ -191,7 +191,10 @@ Highcharts.chart('graf', {
          "Venezuela", "Egypt", "Kuba", "Rusko", "Čína", "Irán", "Saúdská Arábie", "Sýrie", "Severní Korea"]
     },
     yAxis: {
-        max: 10
+        max: 10,
+        title: {
+            text: null
+        }
     },
     credits: {
         enabled: false
